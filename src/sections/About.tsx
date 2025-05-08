@@ -55,8 +55,8 @@ export const About = () => {
         </div>
 
         {/* Image */}
-        <div className="flex flex-col justify-center">
-          <h2 className="text-2xl md:text-3xl lg:text-[2rem] font-bold text-black mb-2">
+        <div className="flex flex-col justify-center items-center">
+          <h2 className="text-2xl md:text-3xl lg:text-[2rem] font-bold text-black mb-2 text-center">
             <span className="yang"> Meet Punjab Trump</span>:{" "}
             <a
               className="hover:text-green-500 text-xl md:text-2xl lg:text-[1.5rem] font-semibold"
