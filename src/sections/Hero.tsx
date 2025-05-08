@@ -51,17 +51,17 @@ export const HeroSection: React.FC = () => {
         <img
           src={p1}
           alt="laughing face"
-          className="absolute top-24 right-4 rotate-[-10deg] w-32 sm:w-40 md:w-52 rounded-full z-10"
+          className="absolute top-4 right-4 rotate-[-10deg] w-40 sm:w-48 md:w-52 lg:w-[20rem] rounded-full z-10"
         />
         <img
           src={p2}
           alt="laughing face"
-          className="absolute top-20 left-4 rotate-[-5deg] w-32 sm:w-44 md:w-60 rounded-full z-10"
+          className="absolute top-20 left-4 rotate-[-5deg] w-40 sm:w-48 md:w-60 lg:w-[24rem] rounded-full z-10"
         />
         <img
           src={p3}
           alt="laughing face"
-          className="absolute bottom-10 right-[10%] rotate-[-10deg] w-32 sm:w-40 md:w-52 rounded-full z-10"
+          className="absolute bottom-10 right-[15%] rotate-[-10deg] w-40 sm:w-48 md:w-52 lg:w-[16rem] rounded-full z-10"
         />
       </div>
 

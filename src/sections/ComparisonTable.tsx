@@ -11,8 +11,9 @@ const data = [
 
 const ComparisonTable = () => {
   return (
-    <section className=" py-12 px-4 sm:px-8 lg:px-16 font-comic">
-      <div className="max-w-5xl mx-auto">
+    <section className="">
+      <div id="showdown" className="py-10" />
+      <div className="max-w-5xl mx-auto pt-6 px-4 sm:px-8 lg:px-16">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-10 yang drop-shadow">
           $TRUMP vs $PTRUMP Showdown
         </h2>

@@ -59,8 +59,9 @@ const TokenomicsFunVariant = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 px-6 font-comic">
-      <div className="max-w-5xl mx-auto text-center">
+    <section ref={sectionRef} className="">
+      <div id="tokenomics" className="py-10" />
+      <div className="max-w-5xl mx-auto text-center py-10 px-6 font-comic">
         <h2 className="text-5xl font-extrabold mb-14 drop-shadow yang">
           $PTRUMP Tokenomics
         </h2>

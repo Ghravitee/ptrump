@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import logo from "../assets/p-1.jpg";
+import { FaXTwitter } from "react-icons/fa6";
+import { PiTelegramLogoLight } from "react-icons/pi";
+import dexscreener from "../assets/dex-screener.png";
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +25,7 @@ export const Navbar: React.FC = () => {
         {/* Hamburger */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-black focus:outline-none"
+          className="md:hidden text-black focus:outline-none cursor-pointer"
           aria-label="Toggle menu"
         >
           <svg
@@ -51,7 +54,7 @@ export const Navbar: React.FC = () => {
         {/* Nav Links */}
         <ul className="hidden md:flex space-x-8 font-medium text-black">
           <li>
-            <a href="#home" className="hover:text-sky-500 transition">
+            <a href="/" className="hover:text-sky-500 transition">
               Home
             </a>
           </li>
@@ -61,18 +64,13 @@ export const Navbar: React.FC = () => {
             </a>
           </li>
           <li>
-            <a href="#kekhalla" className="hover:text-sky-500 transition">
-              Kekhalla
+            <a href="#showdown" className="hover:text-sky-500 transition">
+              Showdown
             </a>
           </li>
           <li>
-            <a href="#how-to-buy" className="hover:text-sky-500 transition">
-              How to buy
-            </a>
-          </li>
-          <li>
-            <a href="#team" className="hover:text-sky-500 transition">
-              Team
+            <a href="#tokenomics" className="hover:text-sky-500 transition">
+              Tokenomics
             </a>
           </li>
         </ul>
@@ -85,30 +83,29 @@ export const Navbar: React.FC = () => {
               href: "#",
               bg: "bg-sky-400",
               hover: "hover:bg-sky-500",
-              icon: "paper-airplane",
+              icon: <FaXTwitter />,
             },
             {
               href: "#",
               bg: "bg-black",
               hover: "hover:bg-gray-800",
-              icon: "twitter",
+              icon: <PiTelegramLogoLight />,
             },
             {
               href: "#",
               bg: "bg-black",
               hover: "hover:bg-gray-800",
-              icon: "github",
+              icon: (
+                <img src={dexscreener} alt="Dexscreener" className="w-5 h-5" />
+              ),
             },
           ].map((btn, i) => (
             <a
               key={i}
               href={btn.href}
-              className={`${btn.bg} text-white p-2 rounded-full ${btn.hover} transition`}
+              className={`${btn.bg} text-white p-2 rounded-full ${btn.hover} transition cursor-pointer`}
             >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                {/* Replace with actual icons if needed */}
-                <circle cx="12" cy="12" r="10" />
-              </svg>
+              {btn.icon}
             </a>
           ))}
         </div>
@@ -116,43 +113,50 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white px-4 pb-4 space-y-4 text-center font-medium text-black shadow-md">
-          <a href="#home" className="block hover:text-sky-500">
-            Home
-          </a>
-          <a href="#about" className="block hover:text-sky-500">
-            About
-          </a>
-          <a href="#kekhalla" className="block hover:text-sky-500">
-            Kekhalla
-          </a>
-          <a href="#how-to-buy" className="block hover:text-sky-500">
-            How to buy
-          </a>
-          <a href="#team" className="block hover:text-sky-500">
-            Team
-          </a>
+        <ul className="md:hidden bg-white px-4 pb-4 space-y-4 text-center font-medium text-black shadow-md list-none">
+          <li>
+            <a href="/" className="hover:text-sky-500 transition ">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="hover:text-sky-500 transition ">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#showdown" className="hover:text-sky-500 transition ">
+              Showdown
+            </a>
+          </li>
+          <li>
+            <a href="#tokenomics" className="hover:text-sky-500 transition ">
+              Tokenomics
+            </a>
+          </li>
 
           {/* Optional mobile social icons */}
           <div className="flex justify-center gap-4 pt-2">
             <a
               href="#"
-              className="bg-sky-400 text-white p-2 rounded-full hover:bg-sky-500 transition"
+              className="bg-sky-400 text-white p-2 rounded-full hover:bg-sky-500 transition cursor-pointer"
             >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <circle cx="12" cy="12" r="10" />
-              </svg>
+              <FaXTwitter />
             </a>
             <a
               href="#"
-              className="bg-black text-white p-2 rounded-full hover:bg-gray-800 transition"
+              className="bg-black text-white p-2 rounded-full hover:bg-gray-800 transition cursor-pointer"
             >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <circle cx="12" cy="12" r="10" />
-              </svg>
+              <PiTelegramLogoLight />
+            </a>
+            <a
+              href="#"
+              className="bg-black text-white p-2 rounded-full hover:bg-gray-800 transition cursor-pointer"
+            >
+              <img src={dexscreener} alt="dexscreener" className="w-5 h-5" />
             </a>
           </div>
-        </div>
+        </ul>
       )}
     </header>
   );

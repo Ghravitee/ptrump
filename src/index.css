@@ -6,6 +6,10 @@
   src: url("/fonts/YangBagus-DYMX9.ttf") format("truetype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .yang {
   font-family: "YangBagus", sans-serif;
 }
