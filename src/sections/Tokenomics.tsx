@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Copy from "../components/Copy";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -69,21 +70,21 @@ const TokenomicsFunVariant = () => {
         <div className="grid sm:grid-cols-2 gap-10 items-center">
           {/* Left: Fun Stats */}
           <div className="space-y-6 text-left">
-            <div className="stat-block bg-white border border-pink-200 shadow-md rounded-xl p-5 ">
+            <div className="stat-block bg-white border-2 border-black border-b-4 rounded-2xl px-[48px] py-[10px] ">
               <p className="text-2xl mb-2 yang">Token Name:</p>
               <p className="text-xl font-bold">Punjab Trump</p>
             </div>
-            <div className="stat-block bg-white border border-pink-200 shadow-md rounded-xl p-5">
+            <div className="stat-block bg-white  border-2 border-black border-b-4 rounded-2xl px-[48px] py-[10px]">
               <p className="text-2xl mb-2 yang">Ticker:</p>
               <p className="text-xl font-bold">PTRUMP</p>
             </div>
-            <div className="stat-block bg-white border border-pink-200 shadow-md rounded-xl p-5">
+            <div className="stat-block bg-white  border-2 border-black border-b-4 rounded-2xl px-[48px] py-[10px]">
               <p className="text-2xl mb-2 yang">Total Supply:</p>
               <p className="text-xl font-bold">
                 <AnimatedNumber value={1000000000} /> PTRUMP
               </p>
             </div>
-            <div className="stat-block bg-white border border-pink-200 shadow-md rounded-xl p-5">
+            <div className="stat-block bg-white border-2 border-black border-b-4 rounded-2xl px-[48px] py-[10px]">
               <p className="text-2xl mb-2 yang">Distribution:</p>
               <ul className="list-disc ml-6 text-lg space-y-1">
                 <li>
@@ -95,10 +96,11 @@ const TokenomicsFunVariant = () => {
                 </li>
               </ul>
             </div>
+            <Copy />
           </div>
 
           {/* Right: Spinning Token Ring */}
-          <div className="flex justify-center">
+          <div className="flex flex-col items-center space-y-3">
             <div
               ref={ringRef}
               className="relative size-[20rem] rounded-full border-[40px] border-pink-400 border-dashed flex items-center justify-center"

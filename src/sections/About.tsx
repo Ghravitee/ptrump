@@ -55,7 +55,16 @@ export const About = () => {
         </div>
 
         {/* Image */}
-        <div className="flex justify-center">
+        <div className="flex flex-col justify-center">
+          <h2 className="text-2xl md:text-3xl lg:text-[2rem] font-bold text-black mb-2">
+            <span className="yang"> Meet Punjab Trump</span>:{" "}
+            <a
+              className="hover:text-green-500 text-xl md:text-2xl lg:text-[1.5rem] font-semibold"
+              href=" https://x.com/Punjab_Trump"
+            >
+              @Punjab_trump
+            </a>
+          </h2>
           <img
             ref={imageRef}
             src={kekImg}

@@ -3,6 +3,7 @@ import p1 from "../assets/wp-1.png";
 import p2 from "../assets/wp-2.png";
 import p3 from "../assets/wp-3.png";
 import gsap from "gsap";
+import Button from "../components/Button";
 
 export const HeroSection: React.FC = () => {
   const title = useRef<HTMLHeadingElement | null>(null);
@@ -92,27 +93,7 @@ export const HeroSection: React.FC = () => {
 
       {/* Button */}
       <div className="mt-8 flex flex-wrap justify-center gap-4 z-20">
-        <a
-          ref={button}
-          href="#"
-          className="bg-green-500 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2 shadow-md hover:bg-green-600 transition"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            className="w-5 h-5"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.707A1 1 0 007 17h10a1 1 0 001-1v-1M16 21a2 2 0 100-4 2 2 0 000 4zm-8 0a2 2 0 100-4 2 2 0 000 4z"
-            />
-          </svg>
-          Buy ptrump
-        </a>
+        <Button content="Buy ptrump" />
       </div>
     </section>
   );
