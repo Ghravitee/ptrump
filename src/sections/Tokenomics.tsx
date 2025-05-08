@@ -69,30 +69,22 @@ const TokenomicsFunVariant = () => {
         <div className="grid sm:grid-cols-2 gap-10 items-center">
           {/* Left: Fun Stats */}
           <div className="space-y-6 text-left">
-            <div className="stat-block bg-white border border-pink-200 shadow-md rounded-xl p-5">
-              <p className="text-xl mb-2">
-                <strong>Token Name:</strong>
-              </p>
-              <p className="text-2xl font-bold">Punjab Trump</p>
+            <div className="stat-block bg-white border border-pink-200 shadow-md rounded-xl p-5 ">
+              <p className="text-2xl mb-2 yang">Token Name:</p>
+              <p className="text-xl font-bold">Punjab Trump</p>
             </div>
             <div className="stat-block bg-white border border-pink-200 shadow-md rounded-xl p-5">
-              <p className="text-xl mb-2">
-                <strong>Ticker:</strong>
-              </p>
-              <p className="text-2xl font-bold">PTRUMP</p>
+              <p className="text-2xl mb-2 yang">Ticker:</p>
+              <p className="text-xl font-bold">PTRUMP</p>
             </div>
             <div className="stat-block bg-white border border-pink-200 shadow-md rounded-xl p-5">
-              <p className="text-xl mb-2">
-                <strong>Total Supply:</strong>
-              </p>
-              <p className="text-2xl font-bold">
+              <p className="text-2xl mb-2 yang">Total Supply:</p>
+              <p className="text-xl font-bold">
                 <AnimatedNumber value={1000000000} /> PTRUMP
               </p>
             </div>
             <div className="stat-block bg-white border border-pink-200 shadow-md rounded-xl p-5">
-              <p className="text-xl mb-3">
-                <strong>Distribution:</strong>
-              </p>
+              <p className="text-2xl mb-2 yang">Distribution:</p>
               <ul className="list-disc ml-6 text-lg space-y-1">
                 <li>
                   <strong>Liquidity:</strong> <AnimatedNumber value={90} />%
