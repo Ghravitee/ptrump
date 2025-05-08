@@ -3,12 +3,10 @@ import p1 from "../assets/wp-1.png";
 import p2 from "../assets/wp-2.png";
 import p3 from "../assets/wp-3.png";
 import gsap from "gsap";
-import Button from "../components/Button";
-
 export const HeroSection: React.FC = () => {
   const title = useRef<HTMLHeadingElement | null>(null);
   const subtitle = useRef<HTMLHeadingElement | null>(null);
-  const button = useRef<HTMLAnchorElement | null>(null);
+  const button = useRef<HTMLButtonElement | null>(null);
   const images = useRef<HTMLDivElement | null>(null);
 
   useLayoutEffect(() => {
@@ -24,12 +22,12 @@ export const HeroSection: React.FC = () => {
 
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({
-        defaults: { opacity: 0, ease: "back.out(1.7)", duration: 0.8 },
+        defaults: { opacity: 0, ease: "back.out(2)", duration: 1 },
       });
 
       tl.from(title.current, { x: 100 })
         .from(subtitle.current, { x: -100 }, "<")
-        .from(button.current, { y: 40 }, "<")
+        .from(button.current, { y: 50 }, "<")
         .from(
           individualImages,
           {
@@ -93,7 +91,12 @@ export const HeroSection: React.FC = () => {
 
       {/* Button */}
       <div className="mt-8 flex flex-wrap justify-center gap-4 z-20">
-        <Button content="Buy ptrump" />
+        <button
+          ref={button}
+          className="flex items-center justify-center bg-green-500 text-[19px] font-bold border-2 border-black border-b-4 rounded-2xl px-[48px] py-[10px] cursor-pointer"
+        >
+          Buy $PTRUMP
+        </button>
       </div>
     </section>
   );
