@@ -23,8 +23,8 @@ export const About = () => {
           },
           defaults: { ease: "power3.out", duration: 1 },
         })
-        .from(textRef.current, { x: -100, opacity: 0 })
-        .from(imageRef.current, { x: 100, opacity: 0 }, "<"); // "<" = start at same time
+        .from(textRef.current, { scale: 0, opacity: 0 })
+        .from(imageRef.current, { scale: 0, opacity: 0 }, "<"); // "<" = start at same time
     }, sectionRef);
 
     return () => ctx.revert();

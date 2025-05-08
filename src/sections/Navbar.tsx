@@ -54,22 +54,22 @@ export const Navbar: React.FC = () => {
         {/* Nav Links */}
         <ul className="hidden md:flex space-x-8 font-medium text-black">
           <li>
-            <a href="/" className="hover:text-sky-500 transition">
+            <a href="/" className="hover:text-green-500 transition">
               Home
             </a>
           </li>
           <li>
-            <a href="#about" className="hover:text-sky-500 transition">
+            <a href="#about" className="hover:text-green-500 transition">
               About
             </a>
           </li>
           <li>
-            <a href="#showdown" className="hover:text-sky-500 transition">
+            <a href="#showdown" className="hover:text-green-500 transition">
               Showdown
             </a>
           </li>
           <li>
-            <a href="#tokenomics" className="hover:text-sky-500 transition">
+            <a href="#tokenomics" className="hover:text-green-500 transition">
               Tokenomics
             </a>
           </li>
@@ -115,22 +115,22 @@ export const Navbar: React.FC = () => {
       {isOpen && (
         <ul className="md:hidden bg-white px-4 pb-4 space-y-4 text-center font-medium text-black shadow-md list-none">
           <li>
-            <a href="/" className="hover:text-sky-500 transition ">
+            <a href="/" className="hover:text-green-500 transition ">
               Home
             </a>
           </li>
           <li>
-            <a href="#about" className="hover:text-sky-500 transition ">
+            <a href="#about" className="hover:text-green-500 transition ">
               About
             </a>
           </li>
           <li>
-            <a href="#showdown" className="hover:text-sky-500 transition ">
+            <a href="#showdown" className="hover:text-green-500 transition ">
               Showdown
             </a>
           </li>
           <li>
-            <a href="#tokenomics" className="hover:text-sky-500 transition ">
+            <a href="#tokenomics" className="hover:text-green-500 transition ">
               Tokenomics
             </a>
           </li>
