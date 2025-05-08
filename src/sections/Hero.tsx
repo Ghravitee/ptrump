@@ -38,7 +38,17 @@ export const HeroSection: React.FC = () => {
             transformOrigin: "center",
           },
           "-=0.4"
-        ); // starts a bit before the previous ends
+        );
+
+      // Wobble subtitle after initial animation
+      gsap.to(subtitle.current, {
+        scale: 1.02,
+        rotation: 5,
+        duration: 0.8,
+        ease: "sine.inOut",
+        repeat: -1,
+        yoyo: true,
+      });
     });
 
     return () => ctx.revert();
@@ -74,9 +84,10 @@ export const HeroSection: React.FC = () => {
       </h1>
       <h2
         ref={subtitle}
-        className="mt-4 text-lg sm:text-xl md:text-2xl font-medium text-black max-w-xl"
+        className="mt-4 text-lg sm:text-xl md:text-2xl font-medium text-green-600 max-w-xl"
       >
-        Trump’s long-lost twin from Pakistan.
+        Trump’s long-lost twin from Pakistan. The voice is deeper. The vibes?
+        Even yuger. $PTRUMP isn't just a meme. It's a movement.
       </h2>
 
       {/* Button */}

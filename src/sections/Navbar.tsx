@@ -19,13 +19,13 @@ export const Navbar: React.FC = () => {
             alt="Kek logo"
             className="w-10 h-10 rounded-full object-cover"
           />
-          <span className="font-bold text-lg text-black">Punjab Trump</span>
+          <span className="font-bold text-sm text-black">Punjab Trump</span>
         </div>
 
         {/* Hamburger */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-black focus:outline-none cursor-pointer"
+          className="md:hidden text-black focus:outline-none cursor-pointer mr-10"
           aria-label="Toggle menu"
         >
           <svg
@@ -103,7 +103,7 @@ export const Navbar: React.FC = () => {
             <a
               key={i}
               href={btn.href}
-              className={`${btn.bg} text-white p-2 rounded-full ${btn.hover} transition cursor-pointer`}
+              className={`${btn.bg} text-white p-3 rounded-full ${btn.hover} transition cursor-pointer`}
             >
               {btn.icon}
             </a>
@@ -139,19 +139,19 @@ export const Navbar: React.FC = () => {
           <div className="flex justify-center gap-4 pt-2">
             <a
               href="#"
-              className="bg-sky-400 text-white p-2 rounded-full hover:bg-sky-500 transition cursor-pointer"
+              className="bg-sky-400 text-white p-3 rounded-full hover:bg-sky-500 transition cursor-pointer"
             >
               <FaXTwitter />
             </a>
             <a
               href="#"
-              className="bg-black text-white p-2 rounded-full hover:bg-gray-800 transition cursor-pointer"
+              className="bg-black text-white p-3 rounded-full hover:bg-gray-800 transition cursor-pointer"
             >
               <PiTelegramLogoLight />
             </a>
             <a
               href="#"
-              className="bg-black text-white p-2 rounded-full hover:bg-gray-800 transition cursor-pointer"
+              className="bg-black text-white p-3 rounded-full hover:bg-gray-800 transition cursor-pointer"
             >
               <img src={dexscreener} alt="dexscreener" className="w-5 h-5" />
             </a>
