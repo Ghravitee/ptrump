@@ -4,7 +4,7 @@ import Button from "./Button";
 const Copy = () => {
   const [hasCopied, setHasCopied] = useState(false);
 
-  const address = "0x0000000000000000000000";
+  const address = "0x733789F6d2aC13Fc3eb9965Cd5F9D72AB309d562";
 
   const handleCopy = () => {
     navigator.clipboard.writeText(address);

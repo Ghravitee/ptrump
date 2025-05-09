@@ -44,8 +44,9 @@ export const About = () => {
           </h2>
           <p className="mb-6 text-lg lg:text-[1.5rem] leading-relaxed font-semibold">
             Trump’s long-lost twin from Pakistan. Same groove, better vocals
-            (don’t believe? check X). If $TRUMP hit $73B, don’t sleep on
-            $PTRUMP. $1B MC? Very possible. Yuge vibes only.
+            (don’t believe? check <a href="https://x.com/PTrump_ERC">X</a>). If
+            $TRUMP hit $73B, don’t sleep on $PTRUMP. $1B MC? Very possible. Yuge
+            vibes only.
           </p>
 
           <p className="text-lg lg:text-[1.5rem] leading-relaxed mb-4 font-semibold">
@@ -60,7 +61,7 @@ export const About = () => {
             <span className="yang"> Meet Punjab Trump</span>:{" "}
             <a
               className="text-green-500 text-xl md:text-2xl lg:text-[1.5rem] font-semibold"
-              href=" https://x.com/Punjab_Trump"
+              href=" https://x.com/PTrump_ERC"
             >
               @Punjab_trump
             </a>

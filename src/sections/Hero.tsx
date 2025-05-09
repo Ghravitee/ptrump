@@ -6,7 +6,7 @@ import gsap from "gsap";
 export const HeroSection: React.FC = () => {
   const title = useRef<HTMLHeadingElement | null>(null);
   const subtitle = useRef<HTMLHeadingElement | null>(null);
-  const button = useRef<HTMLButtonElement | null>(null);
+  const button = useRef<HTMLAnchorElement | null>(null);
   const images = useRef<HTMLDivElement | null>(null);
 
   useLayoutEffect(() => {
@@ -91,12 +91,13 @@ export const HeroSection: React.FC = () => {
 
       {/* Button */}
       <div className="mt-8 flex flex-wrap justify-center gap-4 z-20">
-        <button
+        <a
+          href="https://app.uniswap.org/explore/tokens/ethereum/0x733789f6d2ac13fc3eb9965cd5f9d72ab309d562"
           ref={button}
           className="flex items-center justify-center bg-green-500 text-[19px] font-bold border-2 border-black border-b-4 rounded-2xl px-[48px] py-[10px] cursor-pointer"
         >
           Buy $PTRUMP
-        </button>
+        </a>
       </div>
     </section>
   );

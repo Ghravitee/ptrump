@@ -80,19 +80,20 @@ export const Navbar: React.FC = () => {
           {/* Social Buttons */}
           {[
             {
-              href: "#",
-              bg: "bg-sky-400",
-              hover: "hover:bg-sky-500",
+              href: "https://x.com/PTrump_ERC",
+              bg: "bg-black",
+              hover: "hover:bg-gray-800",
               icon: <FaXTwitter />,
             },
             {
-              href: "#",
-              bg: "bg-black",
-              hover: "hover:bg-gray-800",
+              href: "https://t.me/PTRUMP_ERC20",
+              bg: "bg-sky-400",
+              hover: "hover:bg-sky-500",
+
               icon: <PiTelegramLogoLight />,
             },
             {
-              href: "#",
+              href: "https://dexscreener.com/search?q=0xaf51202e14CA160bE699984E02900e0e55b31Ef3",
               bg: "bg-black",
               hover: "hover:bg-gray-800",
               icon: (
@@ -138,19 +139,19 @@ export const Navbar: React.FC = () => {
           {/* Optional mobile social icons */}
           <div className="flex justify-center gap-4 pt-2">
             <a
-              href="#"
-              className="bg-sky-400 text-white p-3 rounded-full hover:bg-sky-500 transition cursor-pointer"
+              href="https://x.com/PTrump_ERC"
+              className="bg-black text-white p-3 rounded-full hover:bg-gray-800 transition cursor-pointer"
             >
               <FaXTwitter />
             </a>
             <a
-              href="#"
-              className="bg-black text-white p-3 rounded-full hover:bg-gray-800 transition cursor-pointer"
+              href="https://t.me/PTRUMP_ERC20"
+              className="bg-sky-400 text-white p-3 rounded-full hover:bg-sky-500 transition cursor-pointer"
             >
               <PiTelegramLogoLight />
             </a>
             <a
-              href="#"
+              href="https://dexscreener.com/search?q=0xaf51202e14CA160bE699984E02900e0e55b31Ef3"
               className="bg-black text-white p-3 rounded-full hover:bg-gray-800 transition cursor-pointer"
             >
               <img src={dexscreener} alt="dexscreener" className="w-5 h-5" />

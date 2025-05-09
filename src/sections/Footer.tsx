@@ -26,19 +26,19 @@ const Footer = () => {
 
         <div className="flex justify-center gap-4 pt-2">
           <a
-            href="#"
-            className="bg-sky-400 text-white p-4 rounded-full hover:bg-sky-500 transition cursor-pointer"
+            href="https://x.com/PTrump_ERC"
+            className="bg-black text-white p-4 rounded-full hover:bg-gray-800 transition cursor-pointer"
           >
             <FaXTwitter className="text-2xl" />
           </a>
           <a
-            href="#"
-            className="bg-black text-white p-4 rounded-full hover:bg-gray-800 transition cursor-pointer"
+            href="https://t.me/PTRUMP_ERC20"
+            className="bg-sky-400 text-white p-4 rounded-full hover:bg-sky-500 transition cursor-pointer"
           >
             <PiTelegramLogoLight className="text-2xl" />
           </a>
           <a
-            href="#"
+            href="https://dexscreener.com/search?q=0xaf51202e14CA160bE699984E02900e0e55b31Ef3"
             className="bg-black text-white p-4 rounded-full hover:bg-gray-800 transition cursor-pointer"
           >
             <img src={dexscreener} alt="dexscreener" className="w-7 h-7" />
