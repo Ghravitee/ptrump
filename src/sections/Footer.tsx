@@ -38,7 +38,7 @@ const Footer = () => {
             <PiTelegramLogoLight className="text-2xl" />
           </a>
           <a
-            href="https://dexscreener.com/search?q=0xaf51202e14CA160bE699984E02900e0e55b31Ef3"
+            href="https://dexscreener.com/ethereum/0xaf51202e14ca160be699984e02900e0e55b31ef3"
             className="bg-black text-white p-4 rounded-full hover:bg-gray-800 transition cursor-pointer"
           >
             <img src={dexscreener} alt="dexscreener" className="w-7 h-7" />
